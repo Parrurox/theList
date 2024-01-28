@@ -1,0 +1,37 @@
+
+# get all medias
+GET http://localhost:3001/medias HTTP/1.1
+Content-Type: application/json
+
+###
+
+
+# create a media
+POST http://localhost:3001/medias HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "My new media"   
+}
+
+###
+
+
+# update a media
+
+PUT http://localhost:3001/medias/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "My updated media"   
+}
+
+###
+
+
+# delete a media
+
+DELETE http://localhost:3001/medias/1 HTTP/1.1
+Content-Type: application/json
+
+###
