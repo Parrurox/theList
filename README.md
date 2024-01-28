@@ -1,6 +1,6 @@
-# MobiTime
+# TheList
 
-MobiTime is a watchlist tracker app for movies, built with Vite, React, and Context API.
+TheList is a list tracker app for movies,shows, anime etc. built with Vite - React and Context API.
 
 ## Features
 
@@ -8,20 +8,19 @@ MobiTime is a watchlist tracker app for movies, built with Vite, React, and Cont
 - Mark movies as watched
 - Remove movies from your watchlist
 - Search for movies by title
-- Sort movies by various criteria (e.g., release date, rating)
 
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/mobitime.git
+   git clone https://github.com/Parrurox/theList.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd mobitime
+   cd theList
    npm install
    ```
 
@@ -31,22 +30,13 @@ MobiTime is a watchlist tracker app for movies, built with Vite, React, and Cont
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:3000` to access the app.
-
-## Usage
-
-1. Sign up or log in to your account.
-2. Browse the movie catalog or search for specific movies.
-3. Add movies to your watchlist by clicking the "Add to Watchlist" button.
-4. Mark movies as watched by clicking the "Mark as Watched" button.
-5. Remove movies from your watchlist by clicking the "Remove from Watchlist" button.
-6. Use the sorting options to organize your watchlist.
-7. Enjoy tracking your movie watchlist!
+4. Open your browser and navigate to `http://localhost` to access the app.
 
 ## Technologies Used
 
 - Vite
 - React
+- JSON server
 - Context API
 - CSS (or any other styling solution you used)
 
