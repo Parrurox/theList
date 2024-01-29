@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useCallback } from "react";
 
 import axios from "axios";
 
@@ -9,10 +9,10 @@ const Provider = ({ children }) => {
   const [watch, setWatch] = useState([]);
 
   //fetch the data from the server at the start
-  const fetchWatch = async () => {
+  const fetchWatch = useCallback(async () => {
     const { data } = await axios.get("http://localhost:3001/medias");
     setWatch(data);
-  };
+  }, []);
 
   //create a new media and add it to the list
   const createWatch = async (title) => {

@@ -10,7 +10,7 @@ function App() {
   const { fetchWatch } = useContext(watchContext);
   useEffect(() => {
     fetchWatch();
-  }, []);
+  }, [fetchWatch]);
 
   // render
   return (
