@@ -1,9 +1,9 @@
-import { useState, useContext } from "react";
-import watchContext from "../context/watch";
+import { useState } from "react";
+import useWatchContext from "../hooks/use-Watch-Context";
 
 const WatchEdit = ({ watch, onSubmit }) => {
   const [title, setTitle] = useState(watch.title);
-  const { editWatchById } = useContext(watchContext);
+  const { editWatchById } = useWatchContext();
 
   const handleChange = (e) => {
     setTitle(e.target.value);
