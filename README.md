@@ -2,6 +2,8 @@
 
 TheList is a list tracker app for movies,shows, anime etc. built with Vite - React and Context API.
 
+![image](image.png)
+
 ## Features
 
 - Add movies to your watchlist
