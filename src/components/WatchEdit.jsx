@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import watchContext from "../context/watch";
 
-const WatchEdit = ({ media, onSubmit }) => {
-  const [title, setTitle] = useState(media.title);
+const WatchEdit = ({ watch, onSubmit }) => {
+  const [title, setTitle] = useState(watch.title);
+  const { editWatchById } = useContext(watchContext);
 
   const handleChange = (e) => {
     setTitle(e.target.value);
@@ -9,7 +11,8 @@ const WatchEdit = ({ media, onSubmit }) => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    onSubmit(media.id, title);
+    onSubmit();
+    editWatchById(watch.id, title);
   };
 
   // render

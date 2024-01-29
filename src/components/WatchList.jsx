@@ -1,15 +1,14 @@
+import { useContext } from "react";
+import watchContext from "../context/watch";
+
 import WatchShow from "./WatchShow";
 
-const WatchList = ({ medias, onDelete, onEdit }) => {
-  const renderWatch = medias.map((media) => {
-    return (
-      <WatchShow
-        onEdit={onEdit}
-        onDelete={onDelete}
-        key={media.id}
-        media={media}
-      />
-    );
+// code begins here
+const WatchList = () => {
+  const { watch } = useContext(watchContext);
+  // render watch list
+  const renderWatch = watch.map((watch) => {
+    return <WatchShow key={watch.id} watch={watch} />;
   });
 
   return <div className="book-list">{renderWatch}</div>;
