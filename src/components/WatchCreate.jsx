@@ -1,9 +1,10 @@
-import { useState, useContext } from "react";
-import watchContext from "../context/watch";
+import { useState } from "react";
+
+import useWatchContext from "../hooks/use-Watch-Context";
 
 const WatchCreate = () => {
   const [title, setTitle] = useState("");
-  const { createWatch } = useContext(watchContext);
+  const { createWatch } = useWatchContext();
 
   // handle the form change event
   const handleChange = (e) => {

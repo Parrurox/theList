@@ -1,11 +1,11 @@
-import { useState, useContext } from "react";
-import watchContext from "../context/watch";
+import { useState } from "react";
+import useWatchContext from "../hooks/use-Watch-Context";
 import WatchEdit from "./WatchEdit";
 
 //function starts here
 const WatchShow = ({ watch }) => {
   const [showEditForm, setShowEditForm] = useState(false);
-  const { deleteWatchById } = useContext(watchContext);
+  const { deleteWatchById } = useWatchContext();
 
   //handle delete click
   const handleDelClick = () => {
